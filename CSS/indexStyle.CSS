@@ -1,182 +1,115 @@
-:root {
-  /* Colors */
-  --text-color: white;
-  --main-color: black;
-  --nav-color: gray;
+:root{
+  --white: #fff;
+  --light-gray: #f8f8f8;
+  --gray: #eaeaea;
+  --black: #222;
+  --dark-blue: #0A1828;
+  --turquoise: #178582;
+  --gold: #BFA181;
 
-  /* Sizes */
-  --main-height: 100%;
 }
 
-* {
-  margin: 0;
-  padding: 0;
+html{
   box-sizing: border-box;
-  font-family: serif;
-  font-style: italic;
 }
 
-body {
-  display: grid;
-  min-height: 100vh;
-  background-color: white;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-/* Header */
-
-header {
-  width: 100%;
-  padding: 2rem;
-  text-align: center;
+body{
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 100%;
+  line-height: 1.65;
+  color: var(--gold);
+  background-color: var(--dark-blue);
 }
 
-.top_header {
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+p{
+  margin: 0 0 1rem;
+}
+
+p:last-of-type{
+  margin: 0;
+}
+
+header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
 }
 
-.user_profile {
-  height: 50px;
-  width: 50px;
-  background-color: red;
-  border-radius: 50%;
-  margin-left: auto;
+.header-logo{
+  margin: 10px;
+  padding: 10px;
+  font-size: 3em;
 }
 
-/* Navigation */
-
-.top_nav {
-  height: auto;
-  width: 100%;
+.header-nav{
   display: flex;
   justify-content: center;
-  background-color: var(--nav-color);
-  flex-wrap: wrap;
+  padding: 10px;
+  margin: 20px;
 }
 
-li {
-  display: inline-block;
-  background-color: red;
-  font-size: 1.5rem;
-  margin: 0.5rem 2rem;
-}
-
-/* Main Content */
-
-main {
+#nav-list{
+  list-style: none;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  background-color: var(--main-color);
+  gap: 30px;
+  padding: 0;
+  margin: 0;
 }
 
-.rest_display,
-.rest_details {
-  flex: 1 1 100%;
-  padding: 1rem;
-}
-
-.rest_display {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 1rem;
-  background-color: darkgray;
-}
-
-.rest_details {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  padding: 2rem;
-}
-
-/* Search and Rating */
-
-.search_box {
-  flex: 1 1 200px;
-  max-width: 300px;
-}
-
-input {
-  width: 100%;
-  margin-bottom: 1rem;
-}
-
-input:hover {
-  transform: scale(1.1);
-}
-
-.restaurant_image {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-}
-
-.rest_rating {
-  color: var(--text-color);
-  text-align: center;
-}
-
-.star-rating {
-  display: flex;
-  justify-content: center;
-  font-size: 2rem;
-  color: gray;
-  cursor: pointer;
-}
-
-.star-rating .star.selected,
-.star-rating .star:hover,
-.star-rating .star.hovered {
-  color: gold;
-}
-
-/* Footer */
-
-.footer {
+.menu-item{
   position: relative;
+  text-decoration: none;
+  color: var(--gold);
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.menu-item::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--turquoise);
+  transition: width 0.3s ease;
+}
+
+.menu-item:hover::after{
   width: 100%;
-  text-align: center;
-  padding: 1rem;
-  background: #222;
-  color: white;
 }
 
-footer .social_item {
-  margin-top: 0.5rem;
+#nav-list:hover .menu-item{
+  opacity: 0.3;
 }
 
-/* Media Queries for Responsiveness */
-
-@media (min-width: 768px) {
-  .rest_display,
-  .rest_details {
-    flex: 1 1 50%;
-  }
-
-  .user_profile {
-    margin-left: 0;
-  }
+#nav-list .menu-item:hover{
+  opacity: 1;
 }
 
-@media (max-width: 480px) {
-  li {
-    font-size: 1.2rem;
-    margin: 0.5rem;
-  }
+main{
+  background-color: var(--light-gray);
+}
 
-  .rest_display {
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-  }
-
-  input:hover {
-    transform: scale(1.05);
-  }
+footer{
+  background-color: var(--turquoise);
 }
