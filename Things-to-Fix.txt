@@ -1,0 +1,14 @@
+--SVG sizing needs to be fixed.
+
+--hover animation for SVG should be gold background with white letters
+
+-- Logo has to be implemented
+-- Top nav done
+
+
+Body--
+Set structure left side grid list of restaurants right side details of restaurants
+
+-- Top of body should be search box with options for food types
+
+Footer--

@@ -106,6 +106,42 @@ header{
   opacity: 1;
 }
 
+.nav-social{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-social a {
+  position: relative;
+  color: var(--gold);
+  font-size: 1rem;
+  padding: 12px;
+  border-radius: 50%;
+  text-decoration: none;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, transform 0.3s;
+}
+
+svg{
+  height: 10px;
+  width: 10px;
+}
+
+.nav-social a::after {
+}
+
+.nav-social a:hover {
+  transform: scale(1.1);
+  color: var(--white);
+}
+
+.nav-social a:hover::after {
+}
+
+
 main{
   background-color: var(--light-gray);
 }
