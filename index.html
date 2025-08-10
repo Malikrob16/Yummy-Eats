@@ -13,7 +13,7 @@
 
   <body>
     <header class="header">
-      <header-logo class="header-logo">Logo place holder</header-logo>
+      <header-logo class="header-logo">Yummy Eats</header-logo>
       <header-nav class="header-nav">
         <ul id="nav-list">
           <li><a href="#" class="menu-item">Home</a></li>
@@ -30,13 +30,42 @@
     </header>
 
     <main class="main">
-      This will hold my main content
-      <rest-list class="rest-list">
-        This will hold my list of restaurants
-      </rest-list>
-      <rest-details class="rest-details">
-        This will hold the details of the restaurants
-      </rest-details>
+      <top-main class="top-main">
+        <search-box class="search-box">
+          <input type="search">
+          <button class="search-button">Search</button>
+        </search-box>
+        <user-profile class="user-profile">
+          <a href="user_profile.html" class="user-account">User</a>
+        </user-profile>
+      </top-main>
+
+      <rest-container class="rest-container">
+        <rest-list class="rest-list">
+          <rest-card class="rest-card1">
+            This is card 1
+          </rest-card>
+          <rest-card class="rest-card2">
+            This is card 2
+          </rest-card>
+          <rest-card class="rest-card3">
+            This is card 3
+          </rest-card>
+          <rest-card class="rest-card4">
+            This is card 4
+          </rest-card>
+          <rest-card class="rest-card5">
+            This is card 5
+          </rest-card>
+          <rest-card class="rest-card6">
+            This is card 6
+          </rest-card>
+          This will hold my list of restaurants
+        </rest-list>
+        <rest-details class="rest-details">
+          This will hold the details of the restaurants
+        </rest-details>
+      </rest-container>
     </main>
 
     <footer class="footer">
