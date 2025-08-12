@@ -1,14 +1,23 @@
---SVG sizing needs to be fixed.
+--SVG sizing needs to be fixed ✅
 
 --hover animation for SVG should be gold background with white letters
+-- add social media names on hover effects
 
--- Logo has to be implemented
--- Top nav done
+-- Logo has to be implemented ✅
+-- Top nav done ✅
 
 
 Body--
 Set structure left side grid list of restaurants right side details of restaurants
+-- add restaurant card structure
+-- add restaurant detail container structure
 
 -- Top of body should be search box with options for food types
+-- add search svg to search box for clear display
+-- search animations ✅
+-- change search button animation
+--Accessability have input hold open while search button is tab focused
+-- user profile fixed and linked with user_profile html
 
 Footer--
+Add footer
