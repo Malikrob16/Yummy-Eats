@@ -22,14 +22,17 @@ html{
 body{
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-size: 100%;
+  min-height: 100vh;
   line-height: 1.65;
   color: var(--gold);
-  background-color: var(--dark-blue);
+  background-color: var(--black);
 }
 
 img{
@@ -49,7 +52,7 @@ p:last-of-type{
 /*HEADER*/
 header{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -122,26 +125,31 @@ header{
 
 .nav-social a {
   position: relative;
-  color: var(--gold);
-  font-size: 1rem;
+  width: 60px;
+  height: 60px;
+  background-color: var(--gold);
   padding: 12px;
   border-radius: 50%;
-  text-decoration: none;
   display: grid;
   align-items: center;
   justify-content: center;
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-ion-icon{
-  height: 30px;
-  width: 30px;
+svg {
+  width: 40px;
+  height: 40px;
 }
 
 .nav-social a:hover {
+  width: 75px;
+  height: 75px;
+  background-color: var(--turquoise);
+  border-radius: 50%;
   transform: scale(1.1);
-  color: var(--turquoise);
+  color: var(--white);
   opacity: 1;
+  transition: all 0.5s ease-in-out;
 }
 
 .nav-social:hover a:not(:hover){
@@ -189,7 +197,7 @@ main {
   background-color: var(--turquoise);
   height: 50px;
   width: 200px;
-  border-radius: 50px;
+  border-radius: 50px 0px 0px 50px;
   transition: 0.5s ease-in-out;
 }
 
@@ -212,7 +220,7 @@ main {
   height: 50px;
   width: 70px;
   transform: translateX(2px);
-  border-radius: 50px;
+  border-radius: 0px 50px 50px 0px;
   color: var(--white);
   background-color: var(--turquoise);
   z-index: 5;

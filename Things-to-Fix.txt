@@ -4,10 +4,11 @@
 -- add social media names on hover effects
 
 -- Logo has to be implemented ✅
--- Top nav done ✅
+-- Top nav done
 
 
 Body--
+-- add background image
 Set structure left side grid list of restaurants right side details of restaurants
 -- add restaurant card structure
 -- add restaurant detail container structure
