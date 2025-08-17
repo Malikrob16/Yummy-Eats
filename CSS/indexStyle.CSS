@@ -255,14 +255,30 @@ button:active {
 
 
 /*RESTAURANT CONTAINER*/
+
+.rest-container {
+  display: flex;
+  justify-content: center;
+}
+
+/*RESTAURANT LIST*/
 .rest-list {
-  background-color: var(--black);
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 250px 250px 250px;
+  grid-template-rows: 250px 250px 250px;
   width: 50%;
+  height: 700px;
 }
 
 /*RESTAURANT CARDS*/
-.rest-card {
-
+rest-card {
+  padding: 10px;
+  height: 250px;
+  width: 250px;
+  border-radius: 15px;
+  background-color: var(--white);
+  cursor: pointer;
 }
 
 
