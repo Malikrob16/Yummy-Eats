@@ -7,6 +7,9 @@
   --turquoise: #178582;
   --gold: #BFA181;
 
+  /*CONTAINER BACKGROUND COLORS*/
+  --glass: rgb(201, 32, 32), 0.1;
+
 }
 
 html{
@@ -20,10 +23,14 @@ html{
 }
 
 body{
+  background: url("../images/gold-background.jpg") no-repeat center center / cover;
   padding: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
   font-family: Arial, Helvetica, sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -31,8 +38,7 @@ body{
   font-size: 100%;
   min-height: 100vh;
   line-height: 1.65;
-  color: var(--gold);
-  background-color: var(--black);
+  color: var(--black);
 }
 
 img{
@@ -54,6 +60,11 @@ header{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  width: 90%;
+  background: rgba(190, 189, 189, 0.1);
+  border-radius: 40px;
+  backdrop-filter: blur(10px) brightness(1.1);
+  border: 3px solid rgba(190, 189, 189, 0.3);
 }
 
 /*LOGO*/
@@ -85,7 +96,7 @@ header{
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--black);
   font-size: 1.5rem;
   letter-spacing: 0.5px;
   opacity: 1;
@@ -161,12 +172,19 @@ svg {
 main {
   padding: 0;
   margin: 0;
+  width: 90%;
 }
 
 .top-main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 40px;
+  width: 90%;
+  background: rgba(190, 189, 189, 0.1);
+  border-radius: 40px;
+  backdrop-filter: blur(10px) brightness(1.1);
+  border: 3px solid rgba(190, 189, 189, 0.3);
 }
 
 /*SEARCH BOX*/
@@ -259,21 +277,38 @@ button:active {
 .rest-container {
   display: flex;
   justify-content: center;
+  margin-top: 40px;
+  gap: 20px;
 }
 
 /*RESTAURANT LIST*/
 .rest-list {
+  background: rgba(190, 189, 189, 0.1);
+  border-radius: 40px;
+  backdrop-filter: blur(10px) brightness(1.1);
+  border: 3px solid rgba(190, 189, 189, 0.3);
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 250px 250px 250px;
   grid-template-rows: 250px 250px 250px;
+  justify-content: center;
   width: 50%;
   height: 700px;
+  overflow: auto;
+}
+
+.rest-list::-webkit-scrollbar,
+.rest-list::-webkit-scrollbar-thumb,
+.rest-list::-webkit-scrollbar-track {
+  width: 10px;
+  background-color: var(--gold);
+  border-radius: 10px;
 }
 
 /*RESTAURANT CARDS*/
 rest-card {
   padding: 10px;
+  margin: 10px;
   height: 250px;
   width: 250px;
   border-radius: 15px;
@@ -284,10 +319,17 @@ rest-card {
 
 /*RESTAURANT DETAILS*/
 .rest-details {
+  background: rgba(190, 189, 189, 0.1);
+  border-radius: 40px;
+  backdrop-filter: blur(10px) brightness(1.1);
+  border: 3px solid rgba(190, 189, 189, 0.3);
   width: 50%;
 }
 
 /*Footer*/
 footer{
-  background-color: var(--turquoise);
+  background: rgba(190, 189, 189, 0.1);
+  border-radius: 40px;
+  backdrop-filter: blur(10px) brightness(1.1);
+  border: 3px solid rgba(190, 189, 189, 0.3);
 }

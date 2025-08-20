@@ -8,8 +8,8 @@
 
 
 Body--
--- add background image
-Set structure left side grid list of restaurants right side details of restaurants
+-- add background image ✅
+Set structure left side grid list of restaurants right side details of restaurants ✅
 -- add restaurant card structure
 -- add restaurant detail container structure
 
