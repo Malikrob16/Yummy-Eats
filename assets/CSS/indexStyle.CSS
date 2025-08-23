@@ -313,6 +313,7 @@ rest-card {
   width: 250px;
   border-radius: 30px;
   background-color: var(--white);
+  color: var(--white);
   cursor: pointer;
 }
 
@@ -324,10 +325,7 @@ rest-card {
 .rest-card6,
 .rest-card7,
 .rest-card8,
-.rest-card9,
-.rest-card10,
-.rest-card11,
-.rest-card12 {
+.rest-card9 {
   background-size: cover;
   background-position: center;
 }
@@ -335,26 +333,48 @@ rest-card {
 
 /*RESTAURANT DETAILS*/
 .rest-details {
+  display: flex;
+  justify-content: center;
   background: rgba(190, 189, 189, 0.1);
   border-radius: 30px;
   backdrop-filter: blur(10px) brightness(1.1);
   border: 3px solid rgba(190, 189, 189, 0.3);
   width: 50%;
-  color: var(--white);
+  color: var(--black);
   padding: 0.5rem;
 }
 
 .categories-container {
-  display: grid;
-  grid-template-columns: repeat(3, 200px);
-  grid-template-rows: repeat(3, 200px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 90%;
   background: rgba(190, 189, 189, 0.1);
   border-radius: 40px;
   backdrop-filter: blur(10px) brightness(1.1);
   border: 3px solid rgba(190, 189, 189, 0.3);
-  color: var(--white);
+  color: var(--black);
   margin-top: 10px;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(3, 200px);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.food-button {
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+  cursor: pointer;
+  background-color: var(--white);
+  border: 5px solid var(--gray);
+  border-radius: 30px;
 }
 
 .search-container {
@@ -363,7 +383,7 @@ rest-card {
   border-radius: 40px;
   backdrop-filter: blur(10px) brightness(1.1);
   border: 3px solid rgba(190, 189, 189, 0.3);
-  color: var(--white);
+  color: var(--black);
   margin-top: 10px;
 }
 
@@ -373,7 +393,7 @@ rest-card {
   border-radius: 40px;
   backdrop-filter: blur(10px) brightness(1.1);
   border: 3px solid rgba(190, 189, 189, 0.3);
-  color: var(--white);
+  color: var(--black);
   margin-top: 10px;
 }
 
@@ -384,6 +404,6 @@ rest-card {
   border-radius: 40px;
   backdrop-filter: blur(10px) brightness(1.1);
   border: 3px solid rgba(190, 189, 189, 0.3);
-  color: var(--white);
+  color: var(--black);
   margin-top: 10px;
 }

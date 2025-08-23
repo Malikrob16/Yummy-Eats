@@ -10,8 +10,12 @@
 Body--
 -- add background image ✅
 Set structure left side grid list of restaurants right side details of restaurants ✅
--- add restaurant card structure
+-- add restaurant card structure ✅
+-- Fix card text display to make it more readable.
 -- add restaurant detail container structure
+
+-- Complete About section
+-- leave map/search section for last
 
 -- Top of body should be search box with options for food types
 -- add search svg to search box for clear display
