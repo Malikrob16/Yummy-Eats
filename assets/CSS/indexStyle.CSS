@@ -62,7 +62,7 @@ header{
   align-items: center;
   width: 90%;
   background: rgba(190, 189, 189, 0.1);
-  border-radius: 40px;
+  border-radius: 30px;
   backdrop-filter: blur(10px) brightness(1.1);
   border: 3px solid rgba(190, 189, 189, 0.3);
 }
@@ -73,7 +73,7 @@ header{
   padding: 10px;
   font-style: italic;
   font-weight: bold;
-  font-size: 3em;
+  font-size: 3rem;
 }
 
 /*NAVIGATION*/
@@ -96,6 +96,7 @@ header{
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: bold;
   color: var(--black);
   font-size: 1.5rem;
   letter-spacing: 0.5px;
@@ -110,7 +111,7 @@ header{
   bottom: 0;
   width: 0%;
   height: 2px;
-  background-color: var(--turquoise);
+  background-color: var(--white);
   transition: width 0.5s ease;
 }
 
@@ -138,7 +139,7 @@ header{
   position: relative;
   width: 60px;
   height: 60px;
-  background-color: var(--gold);
+  background-color: var(--white);
   padding: 12px;
   border-radius: 50%;
   display: grid;
@@ -147,15 +148,10 @@ header{
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-svg {
-  width: 40px;
-  height: 40px;
-}
-
 .nav-social a:hover {
   width: 75px;
   height: 75px;
-  background-color: var(--turquoise);
+  background-color: var(--white);
   border-radius: 50%;
   transform: scale(1.1);
   color: var(--white);
@@ -179,10 +175,11 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 40px;
-  width: 90%;
+  margin-top: 10px;
+  width: 100%;
+  height: 70px;
   background: rgba(190, 189, 189, 0.1);
-  border-radius: 40px;
+  border-radius: 30px;
   backdrop-filter: blur(10px) brightness(1.1);
   border: 3px solid rgba(190, 189, 189, 0.3);
 }
@@ -200,19 +197,20 @@ main {
   z-index: 2;
   margin-left: 160px;
   font-size: 20px;
-  background-color: var(--gold);
+  background-color: var(--black);
   color: var(--white);
   border-style: none;
   outline: none;
-  width: 35px;
-  height: 35px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   transition: 0.5s ease-in-out;
 }
 
 .top-main .search-box input:hover,
 .top-main .search-box input:focus {
-  background-color: var(--turquoise);
+  background-color: var(--white);
+  color: var(--black);
   height: 50px;
   width: 200px;
   border-radius: 50px 0px 0px 50px;
@@ -220,13 +218,13 @@ main {
 }
 
 .top-main button {
-  height: 35px;
-  width: 35px;
+  height: 50px;
+  width: 50px;
   position: absolute;
   z-index: 1;
   color: transparent;
   border-style: none;
-  transform: translateX(-35px) translateY(1.0px);
+  transform: translateX(-50px) translateY(0.2px);
   border-radius: 50%;
   background-color: var(--gold);
   transition: 0.5s ease-in-out;
@@ -239,15 +237,15 @@ main {
   width: 70px;
   transform: translateX(2px);
   border-radius: 0px 50px 50px 0px;
-  color: var(--white);
-  background-color: var(--turquoise);
+  color: var(--black);
+  font-weight: bold;
+  background-color: var(--white);
   z-index: 5;
   transition: 0.5s ease-in-out;
 }
 
-button:hover,
-button:active {
-
+.top-main button:hover,
+.top-main button:active {
   animation: swap 3s infinite -2s;
 }
 
@@ -264,11 +262,12 @@ button:active {
 
 /*USER PROFILE*/
 .top-main .user-profile{
-  background-color: var(--gold);
+  background-color: var(--black);
   width: 50px;
   height: 50px;
   border-radius: 50%;
   margin-right: 100px;
+  cursor: pointer;
 }
 
 
@@ -277,14 +276,14 @@ button:active {
 .rest-container {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 10px;
   gap: 20px;
 }
 
 /*RESTAURANT LIST*/
 .rest-list {
   background: rgba(190, 189, 189, 0.1);
-  border-radius: 40px;
+  border-radius: 30px;
   backdrop-filter: blur(10px) brightness(1.1);
   border: 3px solid rgba(190, 189, 189, 0.3);
   display: grid;
@@ -294,14 +293,15 @@ button:active {
   justify-content: center;
   width: 50%;
   height: 700px;
-  overflow: auto;
+  padding: 0.5rem;
+  overflow-y: auto;
 }
 
 .rest-list::-webkit-scrollbar,
 .rest-list::-webkit-scrollbar-thumb,
 .rest-list::-webkit-scrollbar-track {
   width: 10px;
-  background-color: var(--gold);
+  background-color: var(--black);
   border-radius: 10px;
 }
 
@@ -311,25 +311,79 @@ rest-card {
   margin: 10px;
   height: 250px;
   width: 250px;
-  border-radius: 15px;
+  border-radius: 30px;
   background-color: var(--white);
   cursor: pointer;
+}
+
+.rest-card1,
+.rest-card2,
+.rest-card3,
+.rest-card4,
+.rest-card5,
+.rest-card6,
+.rest-card7,
+.rest-card8,
+.rest-card9,
+.rest-card10,
+.rest-card11,
+.rest-card12 {
+  background-size: cover;
+  background-position: center;
 }
 
 
 /*RESTAURANT DETAILS*/
 .rest-details {
   background: rgba(190, 189, 189, 0.1);
-  border-radius: 40px;
+  border-radius: 30px;
   backdrop-filter: blur(10px) brightness(1.1);
   border: 3px solid rgba(190, 189, 189, 0.3);
   width: 50%;
+  color: var(--white);
+  padding: 0.5rem;
 }
 
-/*Footer*/
-footer{
+.categories-container {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(3, 200px);
+  width: 90%;
   background: rgba(190, 189, 189, 0.1);
   border-radius: 40px;
   backdrop-filter: blur(10px) brightness(1.1);
   border: 3px solid rgba(190, 189, 189, 0.3);
+  color: var(--white);
+  margin-top: 10px;
+}
+
+.search-container {
+  width: 90%;
+  background: rgba(190, 189, 189, 0.1);
+  border-radius: 40px;
+  backdrop-filter: blur(10px) brightness(1.1);
+  border: 3px solid rgba(190, 189, 189, 0.3);
+  color: var(--white);
+  margin-top: 10px;
+}
+
+.about-container {
+  width: 90%;
+  background: rgba(190, 189, 189, 0.1);
+  border-radius: 40px;
+  backdrop-filter: blur(10px) brightness(1.1);
+  border: 3px solid rgba(190, 189, 189, 0.3);
+  color: var(--white);
+  margin-top: 10px;
+}
+
+/*Footer*/
+.footer{
+  width: 100%;
+  background: rgba(190, 189, 189, 0.1);
+  border-radius: 40px;
+  backdrop-filter: blur(10px) brightness(1.1);
+  border: 3px solid rgba(190, 189, 189, 0.3);
+  color: var(--white);
+  margin-top: 10px;
 }
