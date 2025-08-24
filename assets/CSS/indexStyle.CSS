@@ -6,10 +6,6 @@
   --dark-blue: #0A1828;
   --turquoise: #178582;
   --gold: #BFA181;
-
-  /*CONTAINER BACKGROUND COLORS*/
-  --glass: rgb(201, 32, 32), 0.1;
-
 }
 
 html{
@@ -23,7 +19,7 @@ html{
 }
 
 body{
-  background: url("../images/gold-background.jpg") no-repeat center center / cover;
+  background: url("../images/bg-test.png") no-repeat center center / cover;
   padding: 0;
   margin: 0;
   display: flex;
@@ -38,7 +34,16 @@ body{
   font-size: 100%;
   min-height: 100vh;
   line-height: 1.65;
-  color: var(--black);
+  color: var(--white);
+  animation: fadein 1s ease-in-out;
+}
+
+@keyframes fadein {
+  0% {opacity: 0;
+  transform: translateY(-200px);}
+
+  100% {opacity: 1;
+  transform: translateY(0px);}
 }
 
 img{
@@ -71,6 +76,7 @@ header{
 .header-logo{
   margin: 10px;
   padding: 10px;
+  text-shadow: var(--black) 1px 1px 2px;
   font-style: italic;
   font-weight: bold;
   font-size: 3rem;
@@ -97,7 +103,8 @@ header{
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-  color: var(--black);
+  color: var(--white);
+  text-shadow: var(--black) 1px 1px 2px;
   font-size: 1.5rem;
   letter-spacing: 0.5px;
   opacity: 1;
@@ -110,8 +117,8 @@ header{
   left: 0;
   bottom: 0;
   width: 0%;
-  height: 2px;
-  background-color: var(--white);
+  height: 5px;
+  background-color: var(--gold);
   transition: width 0.5s ease;
 }
 
@@ -151,7 +158,7 @@ header{
 .nav-social a:hover {
   width: 75px;
   height: 75px;
-  background-color: var(--white);
+  background-color: var(--gold);
   border-radius: 50%;
   transform: scale(1.1);
   color: var(--white);
@@ -193,12 +200,13 @@ main {
 
 .top-main .search-box input {
   position: relative;
-  padding: 0;
+  padding-left: 5px;
   z-index: 2;
   margin-left: 160px;
   font-size: 20px;
-  background-color: var(--black);
-  color: var(--white);
+  font-weight: bold;
+  background-color: var(--white);
+  color: var(--black);
   border-style: none;
   outline: none;
   width: 50px;
@@ -209,8 +217,8 @@ main {
 
 .top-main .search-box input:hover,
 .top-main .search-box input:focus {
-  background-color: var(--white);
-  color: var(--black);
+  background-color: var(--black);
+  color: var(--gold);
   height: 50px;
   width: 200px;
   border-radius: 50px 0px 0px 50px;
@@ -237,27 +245,24 @@ main {
   width: 70px;
   transform: translateX(2px);
   border-radius: 0px 50px 50px 0px;
-  color: var(--black);
+  color: var(--gold);
   font-weight: bold;
-  background-color: var(--white);
+  background-color: var(--black);
   z-index: 5;
   transition: 0.5s ease-in-out;
 }
 
 .top-main button:hover,
 .top-main button:active {
-  animation: swap 3s infinite -2s;
+  animation: swap 1s infinite alternate;
 }
 
 @keyframes swap {
-  0% {background: var(--turquoise);
-  color: var(--white);}
-
-  50% {background-color: var(--gray);
-  color: var(--turquoise);}
-
-  100% {background-color: var(--gold);
+  0% {background: var(--gold);
   color: var(--black);}
+
+  100% {background-color: var(--black);
+  color: var(--gold);}
 }
 
 /*USER PROFILE*/
@@ -356,7 +361,8 @@ rest-card .card-content:hover {
   backdrop-filter: blur(10px) brightness(1.1);
   border: 3px solid rgba(190, 189, 189, 0.3);
   width: 50%;
-  color: var(--black);
+  color: var(--white);
+  text-shadow: var(--black) 1px 1px 2px;
   padding: 0.5rem;
 }
 
@@ -370,7 +376,8 @@ rest-card .card-content:hover {
   border-radius: 40px;
   backdrop-filter: blur(10px) brightness(1.1);
   border: 3px solid rgba(190, 189, 189, 0.3);
-  color: var(--black);
+  color: var(--white);
+  text-shadow: var(--black) 1px 1px 2px;
   margin-top: 10px;
 }
 
@@ -399,7 +406,8 @@ rest-card .card-content:hover {
   border-radius: 40px;
   backdrop-filter: blur(10px) brightness(1.1);
   border: 3px solid rgba(190, 189, 189, 0.3);
-  color: var(--black);
+  color: var(--white);
+  text-shadow: var(--black) 1px 1px 2px;
   margin-top: 10px;
 }
 
@@ -409,7 +417,8 @@ rest-card .card-content:hover {
   border-radius: 40px;
   backdrop-filter: blur(10px) brightness(1.1);
   border: 3px solid rgba(190, 189, 189, 0.3);
-  color: var(--black);
+  color: var(--white);
+  text-shadow: var(--black) 1px 1px 2px;
   margin-top: 10px;
 }
 
@@ -420,6 +429,7 @@ rest-card .card-content:hover {
   border-radius: 40px;
   backdrop-filter: blur(10px) brightness(1.1);
   border: 3px solid rgba(190, 189, 189, 0.3);
-  color: var(--black);
+  color: var(--white);
+  text-shadow: var(--black) 1px 1px 2px;
   margin-top: 10px;
 }
