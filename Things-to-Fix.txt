@@ -26,3 +26,9 @@ Set structure left side grid list of restaurants right side details of restauran
 
 Footer--
 Add footer
+
+SEO--
+
+-- Resize images for faster loading times
+-- ensure all words are easily readable
+-- ensure tabbing through elements operates properly

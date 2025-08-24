@@ -307,13 +307,14 @@ main {
 
 /*RESTAURANT CARDS*/
 rest-card {
-  padding: 10px;
+  display: flex;
   margin: 10px;
   height: 250px;
   width: 250px;
   border-radius: 30px;
   background-color: var(--white);
   color: var(--white);
+  overflow: hidden;
   cursor: pointer;
 }
 
@@ -328,6 +329,21 @@ rest-card {
 .rest-card9 {
   background-size: cover;
   background-position: center;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(46, 44, 44, 0.8);
+  transform: translateY(180px);
+  transition: transform 0.5s ease-in-out;
+}
+
+rest-card .card-content:hover {
+  transform: translateY(10px);
+  transition: transform 0.5s ease-in-out;
 }
 
 
