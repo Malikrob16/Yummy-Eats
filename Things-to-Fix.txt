@@ -16,7 +16,9 @@ Set structure left side grid list of restaurants right side details of restauran
 
 -- Complete About section
 -- leave map/search section for last
--- Decide if map/search section should stay in the website.
+-- Decide if map/search section should stay in the website
+
+-- Delete restaurantdetails.html it is not needed
 
 -- Top of body should be search box with options for food types
 -- add search svg to search box for clear display

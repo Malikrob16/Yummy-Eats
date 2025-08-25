@@ -381,18 +381,16 @@ rest-card .card-content:hover {
   margin-top: 10px;
 }
 
-.button-container {
+.button-containe, button-container {
   display: grid;
-  grid-template-columns: repeat(3, 200px);
-  grid-template-rows: repeat(3, 200px);
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 16px; /* adjust as needed */
 }
 
 .food-button {
-  width: 100%;
-  height: 100%;
+  width: 400px;
+  height: 200px;
   margin: 10px;
   cursor: pointer;
   background-color: var(--white);
@@ -401,6 +399,9 @@ rest-card .card-content:hover {
 }
 
 .search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 90%;
   background: rgba(190, 189, 189, 0.1);
   border-radius: 40px;
@@ -412,6 +413,9 @@ rest-card .card-content:hover {
 }
 
 .about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 90%;
   background: rgba(190, 189, 189, 0.1);
   border-radius: 40px;
@@ -424,6 +428,9 @@ rest-card .card-content:hover {
 
 /*Footer*/
 .footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   background: rgba(190, 189, 189, 0.1);
   border-radius: 40px;

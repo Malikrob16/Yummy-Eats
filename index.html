@@ -6,6 +6,9 @@
     <title>Yummy Eats</title>
     <link rel="stylesheet" href="./assets/CSS/indexStyle.CSS">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="sc" href="">
+
+    <script src="script.js" defer></script>
   </head>
 
   <body>
@@ -47,16 +50,16 @@
       <rest-container class="rest-container">
         <rest-list class="rest-list">
           <rest-card class="rest-card1" style="background-image: url(./assets/images/adrien-olichon-restaurant.jpg);">
-            <card-content class="card-content">
-              <h2>Restaurant Name</h2>
-              <p>Restaurant location</p>
-            </card-content>
+            <div class="card-content" id="card-content">
+              <h2>Billy's BBQ Hut</h2>
+              <p>123 test lane</p>
+            </div>
           </rest-card>
 
           <rest-card class="rest-card2" style="background-image: url(./assets/images/chris-liverani-restaurant.jpg);">
             <card-content class="card-content">
-              <h2>Restaurant Name</h2>
-              <p>Restaurant location</p>
+              <h2>Cat's crawfish cookout</h2>
+              <p>321 test ave</p>
             </card-content>
           </rest-card>
 
@@ -110,11 +113,10 @@
           </rest-card>
         </rest-list>
         
-        <rest-details class="rest-details">
-          <h1>Restaurant details will go here.</h1>
-
-
-        </rest-details>
+        <div class="rest-details" id="rest-details">
+          <h2>Restaurant details will go here.</h2>
+          <p>Click on a restaurant card to see more details about the restaurant.</p>
+        </div>
       </rest-container>
     </main>
 
@@ -144,6 +146,18 @@
         <button class="food-button">
           <h1>Desserts</h1>
         </button>
+
+        <button class="food-button">
+          <h1>Healthy</h1>
+        </button>
+
+        <button class="food-button">
+          <h1>Seafood</h1>
+        </button>
+        
+        <button class="food-button">
+          <h1>Vegan</h1>
+        </button>
       </button-container>
     </categories-container>
 
@@ -152,7 +166,11 @@
     </search-container>
 
     <about-container class="about-container">
-      <h1>About the service will go here.</h1>
+      <h1>About</h1>
+
+      <h3>Yummy Eats Mission</h3>
+
+      <p>Our mission is to help people find the best restaurants in their area based on their food preferences. We aim to provide a user-friendly platform that allows users to search for restaurants by cuisine type, location, and other criteria. Our goal is to make it easy for people to discover new dining experiences and support local businesses.</p>
     </about-container>
 
     <footer class="footer">
