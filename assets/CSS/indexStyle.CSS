@@ -355,7 +355,8 @@ rest-card .card-content:hover {
 /*RESTAURANT DETAILS*/
 .rest-details {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   background: rgba(190, 189, 189, 0.1);
   border-radius: 30px;
   backdrop-filter: blur(10px) brightness(1.1);
@@ -365,6 +366,18 @@ rest-card .card-content:hover {
   text-shadow: var(--black) 1px 1px 2px;
   padding: 0.5rem;
 }
+
+.rest-detais h2, .rest-details p {
+  margin: 10px;
+}
+
+.rest-details h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}  
+.rest-details p {
+  font-size: 1.5rem;
+  font-weight: bold;}
 
 .categories-container {
   display: flex;

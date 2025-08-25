@@ -27,6 +27,9 @@ Set structure left side grid list of restaurants right side details of restauran
 --Accessability have input hold open while search button is tab focused
 -- user profile fixed and linked with user_profile html
 
+JavaScript--
+-- figure out correct sizing for images to display when restaurant card is clicked.
+
 Footer--
 Add footer
 

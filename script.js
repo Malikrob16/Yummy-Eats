@@ -12,12 +12,25 @@ document.addEventListener('DOMContentLoaded', function() {
   cardContents.forEach(function(cardcontent) {
     cardcontent.addEventListener('click', function() {
       console.log("A card was clicked!");
+
+      const restCard = cardcontent.parentElement;
+
+      const bgImage = restCard.style.backgroundImage;
+
+      console.log(bgImage);
+
+      let imageUrl = '';
+      if (bgImage && bgImage.startsWith('url(')) {
+        imageUrl = bgImage.slice(4, -1).replace(/["']/g, "");
+      }
       
       const restaurantName = cardcontent.querySelector('h2').innerText;
-      const restaurantLocation = cardcontent.querySelector('p').innerText;
+      const restaurantInformation = cardcontent.querySelector('p').innerHTML;
+
       restdetails.innerHTML = `
         <h2>${restaurantName}</h2>
-        <p>${restaurantLocation}</p>
+        <img src="${imageUrl}" alt="${restaurantName}" style="; border-radius:20px; margin-bottom:10px;">
+        <p>${restaurantInformation}</p>
       `;
     });
   });
@@ -25,21 +38,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Original: Basic DOMContentLoaded event listener
 // My original code
-document.addEventListener('DOMContentLoaded', function() {
-    console.log("The DOM is fully loaded");
-});
+// document.addEventListener('DOMContentLoaded', function() {
+//     console.log("The DOM is fully loaded");
+// });
 
-const cardcontent = document.getElementById('card-content')
-const restdetails = document.getElementById('rest-details')
+// const cardcontent = document.getElementById('card-content')
+// const restdetails = document.getElementById('rest-details')
 
-cardcontent.addEventListener('click', function() {
-    console.log("Card clicked!");
+// cardcontent.addEventListener('click', function() {
+//     console.log("Card clicked!");
 
-    const restaurantName = cardcontent.querySelector('h2').innerText;
-    const restaurantLocation = cardcontent.querySelector('p').innerText;
+//     const restaurantName = cardcontent.querySelector('h2').innerText;
+//     const restaurantLocation = cardcontent.querySelector('p').innerText;
 
-    restdetails.innerHTML = `
-      <h2>${restaurantName}</h2> +
-      <p>${restaurantLocation}</p>
-    `;
-});
+//     restdetails.innerHTML = `
+//       <h2>${restaurantName}</h2> +
+//       <p>${restaurantLocation}</p>
+//     `;
+// });
