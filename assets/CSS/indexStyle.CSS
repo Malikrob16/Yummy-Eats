@@ -179,7 +179,7 @@ main {
 }
 
 .top-main {
-  display: flex;
+  display: flex;;
   justify-content: space-between;
   align-items: center;
   margin-top: 10px;
@@ -202,7 +202,7 @@ main {
   position: relative;
   padding-left: 5px;
   z-index: 2;
-  margin-left: 160px;
+  margin-left: 10px;
   font-size: 20px;
   font-weight: bold;
   background-color: var(--white);
@@ -267,12 +267,29 @@ main {
 
 /*USER PROFILE*/
 .top-main .user-profile{
-  background-color: var(--black);
+  display: flex;
+  background-color: var(--white);
+  position: absolute;
+  right: 10px;
+  z-index: 2;
+  background:url("../images/user-image.jpg") no-repeat center center / cover;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   margin-right: 100px;
   cursor: pointer;
+}
+
+.top-main .user-profile .user-account{
+  position: absolute;
+  transform: translateX(30px);
+  z-index: 1;
+  background-color: var(--white);
+  width: 50px;
+  height: 50px;
+  background: url("../SVG/person-sharp.svg");
+  background-color: var(--white);
+  border-radius: 50%;
 }
 
 

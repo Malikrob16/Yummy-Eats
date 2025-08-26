@@ -11,20 +11,20 @@ Body--
 -- add background image ✅
 Set structure left side grid list of restaurants right side details of restaurants ✅
 -- add restaurant card structure ✅
--- Fix card text display to make it more readable.
--- add restaurant detail container structure
+-- Fix card text display to make it more readable. ✅
+-- add restaurant detail container structure ✅
 
--- Complete About section
+-- Complete About section ✅
 -- leave map/search section for last
 -- Decide if map/search section should stay in the website
 
--- Delete restaurantdetails.html it is not needed
+-- Delete restaurantdetails.html it is not needed ✅
 
 -- Top of body should be search box with options for food types
 -- add search svg to search box for clear display
 -- search animations ✅
--- change search button animation
---Accessability have input hold open while search button is tab focused
+-- change search button animation ✅
+-- Accessability have input hold open while search button is tab focused
 -- user profile fixed and linked with user_profile html
 
 JavaScript--
