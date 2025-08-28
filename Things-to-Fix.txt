@@ -12,6 +12,8 @@
 -- make restaurant list responsive ✅
 -- make categories responsive ✅
 
+-- Fix mobile media sizing ✅
+
 Body--
 -- add background image ✅
 Set structure left side grid list of restaurants right side details of restaurants ✅
