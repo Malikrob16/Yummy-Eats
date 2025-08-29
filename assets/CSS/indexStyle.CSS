@@ -4,8 +4,11 @@
   --gray: #eaeaea;
   --black: #222;
   --dark-blue: #0A1828;
-  --turquoise: #178582;
   --gold: #BFA181;
+
+  --hdr-gradient: linear-gradient(
+    122deg in oklab,
+    #BFA181 32%, 50%, oklch(28% 0 200) 75%);
 }
 
 html{
@@ -309,7 +312,7 @@ main {
   margin-left: 10px;
   font-size: 20px;
   font-weight: bold;
-  background-color: var(--white);
+  background-color: var(--gold);
   color: var(--black);
   border-style: none;
   outline: none;
@@ -480,6 +483,27 @@ rest-card .card-content:hover {
   transition: transform 0.5s ease-in-out;
 }
 
+.card-content button {
+  margin-top: auto;
+  padding: 10px;
+  border: none;
+  background: var(--hdr-gradient);
+  color: var(--white);
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.card-content button:hover,
+.card-content button:focus,
+.card-content button:active {
+  background: var(--gold);
+  color: var(--black);
+  border: 5px solid var(--dark-blue);
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
 @media screen and (max-width: 768px){
   .rest-list {
     grid-template-columns: repeat(2, 1fr);
@@ -563,7 +587,7 @@ rest-card .card-content:hover {
   margin-top: 10px;
 }
 
-.button-containe, button-container {
+.button-container, button-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -575,14 +599,37 @@ rest-card .card-content:hover {
   height: 200px;
   margin: 10px;
   cursor: pointer;
-  background-color: var(--white);
+  background: var(--hdr-gradient);
+  color: var(--white);
   border: 5px solid var(--gray);
   border-radius: 30px;
+}
+
+.food-button:hover,
+.food-button:focus,
+.food-button:active {
+  background: var(--gold);
+  color: var(--black);
+  border: 5px solid var(--dark-blue);
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
 }
 
 @media  screen and (max-width: 900px){
   .button-container{
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .food-button{
+    width: 90%;
+    height: 150px;
+  }
+}
+
+@media  screen and (max-width: 600px){
+  .button-container{
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
   }
 

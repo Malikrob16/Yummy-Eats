@@ -21,8 +21,8 @@ Set structure left side grid list of restaurants right side details of restauran
 -- Fix card text display to make it more readable. ✅
 -- add restaurant detail container structure ✅
 
--- Style buttons in restaurant list
--- Style buttons in categories
+-- Style buttons in restaurant list ✅
+-- Style buttons in categories ✅
 
 -- Complete About section ✅
 -- leave map/search section for last ✅
@@ -39,13 +39,13 @@ Set structure left side grid list of restaurants right side details of restauran
 -- user profile fixed and linked with user_profile html ✅
 
 JavaScript--
--- figure out correct sizing for images to display when restaurant card is clicked.
+-- figure out correct sizing for images to display when restaurant card is clicked. ❌
 
 Footer--
 Add footer ✅
 
 SEO--
 
--- Resize images for faster loading times
+-- Resize images for faster loading times ❌
 -- ensure all words are easily readable ✅
 -- ensure tabbing through elements operates properly ✅

@@ -1,4 +1,4 @@
-// Updated: Add click event listeners to all card-content elements
+// Add click event listeners to all card-content elements
 document.addEventListener('DOMContentLoaded', function() {
   console.log("The DOM is fully loaded");
 
@@ -35,24 +35,3 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
-
-// Original: Basic DOMContentLoaded event listener
-// My original code
-// document.addEventListener('DOMContentLoaded', function() {
-//     console.log("The DOM is fully loaded");
-// });
-
-// const cardcontent = document.getElementById('card-content')
-// const restdetails = document.getElementById('rest-details')
-
-// cardcontent.addEventListener('click', function() {
-//     console.log("Card clicked!");
-
-//     const restaurantName = cardcontent.querySelector('h2').innerText;
-//     const restaurantLocation = cardcontent.querySelector('p').innerText;
-
-//     restdetails.innerHTML = `
-//       <h2>${restaurantName}</h2> +
-//       <p>${restaurantLocation}</p>
-//     `;
-// });
