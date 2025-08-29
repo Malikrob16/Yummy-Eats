@@ -39,7 +39,7 @@ Set structure left side grid list of restaurants right side details of restauran
 -- user profile fixed and linked with user_profile html ✅
 
 JavaScript--
--- figure out correct sizing for images to display when restaurant card is clicked. ❌
+-- figure out correct sizing for images to display when restaurant card is clicked. ✅
 
 Footer--
 Add footer ✅

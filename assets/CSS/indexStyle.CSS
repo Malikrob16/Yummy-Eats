@@ -322,6 +322,12 @@ main {
   transition: 0.5s ease-in-out;
 }
 
+@media screen and (max-width: 768px){
+  .top-main .search-box input {
+    padding-left: 20px;
+  }
+}
+
 .top-main .search-box input:hover,
 .top-main .search-box input:focus {
   background-color: var(--black);
@@ -330,6 +336,20 @@ main {
   width: 200px;
   border-radius: 50px 0px 0px 50px;
   transition: 0.5s ease-in-out;
+}
+
+@media  screen and (max-width: 768px){
+  .top-main .search-box input:hover,
+  .top-main .search-box input:focus {
+    width: 150px;
+  }
+}
+
+@media  screen and (max-width: 600px){
+  .top-main .search-box input:hover,
+  .top-main .search-box input:focus {
+    width: 100px;
+  }
 }
 
 .top-main button {
@@ -397,6 +417,12 @@ main {
   background: url("../SVG/person-sharp.svg");
   background-color: var(--white);
   border-radius: 50%;
+}
+
+@media screen and (max-width: 768px){
+  .top-main .user-profile{
+    margin-right: 50px;
+  }
 }
 
 
@@ -561,6 +587,16 @@ rest-card .card-content:hover {
   font-size: 3rem;
   font-weight: bold;
 }  
+
+.rest-details img {
+  width: 500px;      
+  height: 400px;     
+  object-fit: cover; 
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
 .rest-details p {
   font-size: 1.5rem;
   font-weight: bold;}
@@ -627,7 +663,7 @@ rest-card .card-content:hover {
   }
 }
 
-@media  screen and (max-width: 600px){
+@media screen and (max-width: 768px){
   .button-container{
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
@@ -639,7 +675,7 @@ rest-card .card-content:hover {
   }
 }
 
-@media screen and (max-width: 768px){
+@media  screen and (max-width: 600px){
   .button-container{
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
