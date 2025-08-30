@@ -69,6 +69,9 @@ header{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  position: sticky;
+  z-index: 10;
+  top: 0;
   width: 90%;
   background: rgba(190, 189, 189, 0.1);
   border-radius: 30px;
@@ -99,7 +102,6 @@ header{
   }
 
   #nav-list{
-    flex-direction: column;
     gap: 10px;
   }
 
@@ -608,14 +610,17 @@ rest-card .card-content:hover {
     }
   }
 
+  /*CATEGORIES*/
 .categories-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 80%;
   background: rgba(190, 189, 189, 0.1);
   border-radius: 40px;
+  box-sizing: border-box;
+  overflow: hidden;
   backdrop-filter: blur(10px) brightness(1.1);
   border: 3px solid rgba(190, 189, 189, 0.3);
   color: var(--white);
@@ -625,15 +630,19 @@ rest-card .card-content:hover {
 
 .button-container, button-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 16px; /* adjust as needed */
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .food-button {
-  width: 400px;
-  height: 200px;
-  margin: 10px;
+  width: 300px;
+  max-width: 450px;
+  height: 250px;
+  margin: 0 auto;
   cursor: pointer;
   background: var(--hdr-gradient);
   color: var(--white);
@@ -649,6 +658,18 @@ rest-card .card-content:hover {
   border: 5px solid var(--dark-blue);
   transform: scale(1.05);
   transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1200px){
+  .button-container{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .food-button{
+    width: 90%;
+    height: 150px;
+  }
 }
 
 @media  screen and (max-width: 900px){
@@ -687,6 +708,7 @@ rest-card .card-content:hover {
   }
 }
 
+  /*SEARCH*/
 .search-container {
   display: flex;
   flex-direction: column;
@@ -708,6 +730,7 @@ rest-card .card-content:hover {
   padding: 1rem;
 }
 
+  /*ABOUT*/
 .about-container {
   display: flex;
   flex-direction: column;
@@ -736,7 +759,7 @@ rest-card .card-content:hover {
   padding: 1rem;
 }
 
-/*Footer*/
+/*FOOTER*/
 .footer{
   display: flex;
   flex-direction: column;
