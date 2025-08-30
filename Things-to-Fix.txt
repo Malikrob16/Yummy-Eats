@@ -1,0 +1,51 @@
+--SVG sizing needs to be fixed ✅
+
+--hover animation for SVG should be gold background ✅
+-- add social media names on hover effects ✅
+
+-- Logo has to be implemented ✅
+-- Top nav done ✅
+
+-- 08/26/2025 Focus on making web page responsive on all sizes using @media. ✅
+
+-- make header elements responsive ✅
+-- make restaurant list responsive ✅
+-- make categories responsive ✅
+
+-- Fix mobile media sizing ✅
+
+Body--
+-- add background image ✅
+Set structure left side grid list of restaurants right side details of restaurants ✅
+-- add restaurant card structure ✅
+-- Fix card text display to make it more readable. ✅
+-- add restaurant detail container structure ✅
+
+-- Style buttons in restaurant list ✅
+-- Style buttons in categories ✅
+
+-- Complete About section ✅
+-- leave map/search section for last ✅
+-- Decide if map/search section should stay in the website ✅
+
+-- Delete restaurantdetails.html it is not needed ✅
+
+-- Top of body should be search box with options for food types ❌
+-- add search svg to search box for clear display ❌
+-- add instructions next to search box. ✅
+-- search animations ✅
+-- change search button animation ✅
+-- Accessability have input hold open while search button is tab focused ❌
+-- user profile fixed and linked with user_profile html ✅
+
+JavaScript--
+-- figure out correct sizing for images to display when restaurant card is clicked. ✅
+
+Footer--
+Add footer ✅
+
+SEO--
+
+-- Resize images for faster loading times ❌
+-- ensure all words are easily readable ✅
+-- ensure tabbing through elements operates properly ✅
