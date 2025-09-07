@@ -218,7 +218,8 @@ header{
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-.nav-social a:hover {
+.nav-social a:hover,
+.nav-social a:focus {
   width: 75px;
   height: 75px;
   background-color: var(--gold);
@@ -316,8 +317,7 @@ main {
   font-weight: bold;
   background-color: var(--gold);
   color: var(--black);
-  border-style: none;
-  outline: none;
+  border-style: none;     
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -401,7 +401,7 @@ main {
   position: absolute;
   right: 10px;
   z-index: 2;
-  background:url("../images/user-image.jpg") no-repeat center center / cover;
+  background:url("../images/user-imageresized1010.jpg") no-repeat center center / cover;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -481,6 +481,12 @@ rest-card {
   color: var(--white);
   overflow: hidden;
   cursor: pointer;
+}
+
+rest-card:focus-within .card-content,
+rest-card:focus .card-content {
+  transform: translateY(10px);
+  transition: transform 0.5s ease-in-out;
 }
 
 .rest-card1,

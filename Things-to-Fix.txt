@@ -38,6 +38,8 @@ Set structure left side grid list of restaurants right side details of restauran
 -- Accessability have input hold open while search button is tab focused ❌
 -- user profile fixed and linked with user_profile html ✅
 
+-- Move Food type categories into map search container single row across top above map
+
 JavaScript--
 -- figure out correct sizing for images to display when restaurant card is clicked. ✅
 
@@ -46,6 +48,6 @@ Add footer ✅
 
 SEO--
 
--- Resize images for faster loading times ❌
+-- Resize images for faster loading times ✅
 -- ensure all words are easily readable ✅
 -- ensure tabbing through elements operates properly ✅
