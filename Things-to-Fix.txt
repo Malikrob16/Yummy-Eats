@@ -40,6 +40,10 @@ Set structure left side grid list of restaurants right side details of restauran
 
 -- Move Food type categories into map search container single row across top above map
 
+-- Change search container font sizing to be more readable
+
+-- Make it so that when a restaurant's details are displayed the rest details section is placed in the center of the display
+
 JavaScript--
 -- figure out correct sizing for images to display when restaurant card is clicked. ✅
 
