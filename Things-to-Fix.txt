@@ -44,6 +44,8 @@ Set structure left side grid list of restaurants right side details of restauran
 
 -- Make it so that when a restaurant's details are displayed the rest details section is placed in the center of the display
 
+-- downsize images again for quicker load times
+
 JavaScript--
 -- figure out correct sizing for images to display when restaurant card is clicked. ✅
 

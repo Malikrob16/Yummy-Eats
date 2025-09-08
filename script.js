@@ -26,6 +26,9 @@ document.addEventListener('DOMContentLoaded', function() {
       <img src="${imageUrl}" alt="${restaurantName}" style="border-radius:20px;margin-bottom:10px;">
       <p>${restaurantInformation}</p>
     `;
+
+    // Scroll to the details section
+    restdetails.scrollIntoView({ behavior: "smooth" });
   }
 
   // Add click event listener to each card-content element
