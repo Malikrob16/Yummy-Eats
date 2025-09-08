@@ -10,17 +10,17 @@
 
   <body>
     <header class="header" id="HEADER">
-      <header-logo class="header-logo">Yummy Eats</header-logo>
+      <h1 class="header-logo">Yummy Eats</h1>
 
-      <header-nav class="header-nav">
+      <div class="header-nav">
         <ul id="nav-list">
           <li><a href="#" class="menu-item">Home</a></li>
           <li><a href="#SEARCH" class="menu-item">Search</a></li>
           <li><a href="#ABOUT" class="menu-item">About</a></li>
         </ul>
-      </header-nav>
+      </div>
 
-      <nav-social class="nav-social">
+      <div class="nav-social">
         <a href="#" class="Facebook" title="Facebook"><svg fill="#000000" width="40px" height="40px" viewBox="0 0 1.5 1.5" id="facebook" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color"><path id="primary" d="M0.875 0.375h0.188a0.063 0.063 0 0 0 0.063 -0.063V0.188a0.063 0.063 0 0 0 -0.063 -0.063h-0.188a0.313 0.313 0 0 0 -0.313 0.313v0.188H0.438a0.063 0.063 0 0 0 -0.063 0.063v0.125a0.063 0.063 0 0 0 0.063 0.063h0.125v0.438a0.063 0.063 0 0 0 0.063 0.063h0.125a0.063 0.063 0 0 0 0.063 -0.063v-0.438h0.139a0.063 0.063 0 0 0 0.063 -0.048l0.031 -0.125a0.063 0.063 0 0 0 -0.063 -0.077H0.813V0.438a0.063 0.063 0 0 1 0.063 -0.063" style="fill: rgb(0, 0, 0);"/></svg>
         </a>
 
@@ -30,27 +30,28 @@
         </a>
         <a href="#" class="Youtube" title="Youtube"><svg fill="#000000" width="40px" height="40px" viewBox="0 0 1.5 1.5" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="M1.438 0.607a0.531 0.531 0 0 0 -0.057 -0.258 0.182 0.182 0 0 0 -0.107 -0.063A4.875 4.875 0 0 0 0.75 0.267a4.938 4.938 0 0 0 -0.521 0.019 0.179 0.179 0 0 0 -0.091 0.046c-0.056 0.052 -0.063 0.141 -0.069 0.216a3 3 0 0 0 0 0.405 0.6 0.6 0 0 0 0.019 0.125 0.196 0.196 0 0 0 0.044 0.085 0.179 0.179 0 0 0 0.093 0.049 2.813 2.813 0 0 0 0.406 0.021c0.219 0.003 0.411 0 0.637 -0.018a0.181 0.181 0 0 0 0.096 -0.049 0.156 0.156 0 0 0 0.038 -0.063 0.662 0.662 0 0 0 0.033 -0.212c0.003 -0.035 0.003 -0.246 0.003 -0.284M0.609 0.928V0.541l0.37 0.194c-0.104 0.058 -0.241 0.122 -0.37 0.193"/></svg>
         </a>
-      </nav-social>
+      </div>
     </header>
 
     <main class="main">
-      <top-main class="top-main">
-        <search-box class="search-box">
-          <span class="search-indicator"> ⬅️ Hover here to open search box.</span>
-          <input type="search">
+      <div class="top-main">
+        <div class="search-box">
+          <!-- <span class="search-indicator"> ⬅️ Hover here to open search box.</span> -->
+          <input class="search-field" type="search">
           <button class="search-button">Search</button>
-        </search-box>
-        <user-profile class="user-profile">
+          <svg class="search-icon" width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 4a6 6 0 1 0 0 12 6 6 0 0 0 0-12zm-8 6a8 8 0 1 1 14.32 4.906l5.387 5.387a1 1 0 0 1-1.414 1.414l-5.387-5.387A8 8 0 0 1 2 10z" fill="#0D0D0D"/></svg>
+        </div>
+        <div class="user-profile">
           <a href="#" class="user-account"></a>
-        </user-profile>
-        <create-account class="create-account">
+        </div>
+        <div class="create-account">
           <a href="#" class="create-link"></a>
-        </create-account>
-      </top-main>
+        </div>
+      </div>
 
       <rest-container class="rest-container">
-        <rest-list class="rest-list">
-          <rest-card class="rest-card1" style="background-image: url(./assets/images/adrien-olichon-restaurant.jpg);">
+        <div class="rest-list">
+          <rest-card class="rest-card1" tabindex="0" style="background-image: url(./assets/images/adrien-olichon-restaurantresized2020.jpg);">
             <card-content class="card-content">
               <h2>Billy's BBQ</h2>
               <p>Location: 123 test lane <br>
@@ -64,7 +65,7 @@
             </card-content>
           </rest-card>
 
-          <rest-card class="rest-card2" style="background-image: url(./assets/images/chris-liverani-restaurant.jpg);">
+          <rest-card class="rest-card2" tabindex="0" style="background-image: url(./assets/images/chris-liverani-restaurantresized3030.jpg);">
             <card-content class="card-content">
               <h2>Cat's crawfish</h2>
               <p>Location: 321 test lane <br>
@@ -77,7 +78,7 @@
             </card-content>
           </rest-card>
 
-          <rest-card class="rest-card3" style="background-image: url(./assets/images/dan-gold-restaurant.jpg);">
+          <rest-card class="rest-card3" tabindex="0" style="background-image: url(./assets/images/dan-gold-restaurantresized2525.jpg);">
             <card-content class="card-content">
               <h2>Icy's Ice cream</h2>
               <p>Location: 123 fake ave <br>
@@ -90,7 +91,7 @@
             </card-content>
           </rest-card>
 
-          <rest-card class="rest-card4" style="background-image: url(./assets/images/nathan-dumlao-restaurant.jpg);">
+          <rest-card class="rest-card4" tabindex="0" style="background-image: url(./assets/images/nathan-dumlao-restaurantresized2020.jpg);">
             <card-content class="card-content">
               <h2>Malik's Meatloaf</h2>
               <p>Location: 321 fake ave <br>
@@ -103,7 +104,7 @@
             </card-content>
           </rest-card>
 
-          <rest-card class="rest-card5" style="background-image: url(./assets/images/jason-leung-restaurant.jpg);">
+          <rest-card class="rest-card5" tabindex="0" style="background-image: url(./assets/images/jason-leung-restaurantresized1515.jpg);">
             <card-content class="card-content">
               <h2>Angela's Avocados</h2>
               <p>Location: 123 fake blvd <br>
@@ -116,7 +117,7 @@
             </card-content>
           </rest-card>
 
-          <rest-card class="rest-card6" style="background-image: url(./assets/images/jay-wennington-restaurant.jpg);">
+          <rest-card class="rest-card6" tabindex="0" style="background-image: url(./assets/images/jay-wennington-restaurantresized2525.jpg);">
             <card-content class="card-content">
               <h2>Monique's Melters</h2>
               <p>Location: 321 fake blvd <br>
@@ -129,7 +130,7 @@
             </card-content>
           </rest-card>
 
-          <rest-card class="rest-card7" style="background-image: url(./assets/images/kayleigh-harrington-restaurant.jpg);">
+          <rest-card class="rest-card7" tabindex="0" style="background-image: url(./assets/images/kayleigh-harrington-restaurantresized1515.jpg);">
             <card-content class="card-content">
               <h2>Lily's Lots</h2>
               <p>Location: 111 real ave <br>
@@ -142,7 +143,7 @@
             </card-content>
           </rest-card>
 
-          <rest-card class="rest-card8" style="background-image: url(./assets/images/patrick-tomasso-restaurant.jpg);">
+          <rest-card class="rest-card8" tabindex="0" style="background-image: url(./assets/images/patrick-tomasso-restaurantresized2020.jpg);">
             <card-content class="card-content">
               <h2>Veggies's Volume</h2>
               <p>Location: 222 real ave <br>
@@ -155,7 +156,7 @@
             </card-content>
           </rest-card>
           
-          <rest-card class="rest-card9" style="background-image: url(./assets/images/shawn-nmp-restaurant.jpg);">
+          <rest-card class="rest-card9" tabindex="0" style="background-image: url(./assets/images/shawn-nmp-restaurantresized1515.jpg);">
             <card-content class="card-content">
               <h2>Shawn's Sliders</h2>
               <p>Location: 333 real ave <br>
@@ -167,7 +168,7 @@
               </button>
             </card-content>
           </rest-card>
-        </rest-list>
+        </div>
         
         <div class="rest-details" id="rest-details">
           <h2>Restaurant details will go here.</h2>
@@ -176,53 +177,54 @@
       </rest-container>
     </main>
 
-    <categories-container class="categories-container">
-      <h1>Food type categories will go here.</h1>
+    <div class="categories-container">
+      <h2>Food types</h2>
       <button-container>
         <button class="food-button">
-          <h1>Chinese</h1>
+          <h2>Chinese</h2>
         </button>
 
         <button class="food-button">
-          <h1>Mexican</h1>
+          <h2>Mexican</h2>
         </button>
 
         <button class="food-button">
-          <h1>Italian</h1>
+          <h2>Italian</h2>
         </button>
 
         <button class="food-button">
-          <h1>Fast Food</h1>
+          <h2>Fast Food</h2>
         </button>
 
         <button class="food-button">
-          <h1>Coffee</h1>
+          <h2>Coffee</h2>
         </button>
         
         <button class="food-button">
-          <h1>Desserts</h1>
+          <h2>Desserts</h2>
         </button>
 
         <button class="food-button">
-          <h1>Healthy</h1>
+          <h2>Healthy</h2>
         </button>
 
         <button class="food-button">
-          <h1>Seafood</h1>
+          <h2>Seafood</h2>
         </button>
         
         <button class="food-button">
-          <h1>Vegan</h1>
+          <h2>Vegan</h2>
         </button>
       </button-container>
-    </categories-container>
+    </div>
 
     <search-container id="SEARCH" class="search-container">
-      <h1>Map and search will go here.
+      <h2>Search Near You</h2>
         <br>
-        <span class="search-instructions">Use the search box above to find restaurants.</span>
-      </h1>
-      <h1>For privacy reasons Location API will not be added till a later date.</h1>
+        <span class="search-instructions">Select one of the food types to display matching restaurants.</span>
+
+        <!-- PlaceHolder map -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32208.655698688563!2d-81.59683241198465!3d28.3986333507373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dd7ee634caa5f7%3A0xa71e391fd01cf1a0!2sWalt%20Disney%20World%C2%AE%20Resort!5e1!3m2!1sen!2sus!4v1757291153851!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </search-container>
 
     <about-container id="ABOUT" class="about-container">
