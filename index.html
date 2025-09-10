@@ -33,19 +33,43 @@
       </div>
     </header>
 
+    <!-- Must be a direct child of the body tag to properly display -->
+    <div id="popup-container" class="create-popup-hidden">
+          <div class="popup-content">
+            <h2>Create Account</h2>
+            <form>
+              <label for="name">Username:</label>
+              <br>
+              <input type="text" id="name" name="name">
+              <br>
+              <label for="email">Email:</label>
+              <br>
+              <input type="text" id="email" name="email">
+              <br>
+              <label for="password" id="password" data-name="password">Password:</label>
+              <br>
+              <input type="password">
+              <br>
+              <label for="confirm-password" id="confirm-password" data-name="confirm-password"> Confirm password:</label>
+              <br>
+              <input type="password">
+              <br>
+              <button type="submit" class="submit-button">Submit</button>
+            </form>
+            <button class="closepopupbutton" id="closepopupbutton"><svg fill="#000000" width="50px" height="50px" viewBox="-6 -6 24 24" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin" class="jam jam-close"><path d='M7.314 5.9l3.535-3.536A1 1 0 1 0 9.435.95L5.899 4.485 2.364.95A1 1 0 1 0 .95 2.364l3.535 3.535L.95 9.435a1 1 0 1 0 1.414 1.414l3.535-3.535 3.536 3.535a1 1 0 1 0 1.414-1.414L7.314 5.899z' /></svg></button>
+          </div>
+        </div>
+
     <main class="main">
       <div class="top-main">
         <div class="search-box">
-          <!-- <span class="search-indicator"> ⬅️ Hover here to open search box.</span> -->
           <input class="search-field" type="search">
           <button class="search-button">Search</button>
           <svg class="search-icon" width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 4a6 6 0 1 0 0 12 6 6 0 0 0 0-12zm-8 6a8 8 0 1 1 14.32 4.906l5.387 5.387a1 1 0 0 1-1.414 1.414l-5.387-5.387A8 8 0 0 1 2 10z" fill="#0D0D0D"/></svg>
         </div>
-        <div class="user-profile">
-          <a href="#" class="user-account"></a>
-        </div>
-        <div class="create-account">
-          <a href="#" class="create-link"></a>
+        <div class="profiles-container">
+            <button class="user-profile" id="view-account-button"></button>
+            <button class="create-account" id="create-account-button"></button>
         </div>
       </div>
 
