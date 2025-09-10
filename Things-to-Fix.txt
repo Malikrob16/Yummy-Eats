@@ -31,18 +31,25 @@ Set structure left side grid list of restaurants right side details of restauran
 -- Delete restaurantdetails.html it is not needed ✅
 
 -- Top of body should be search box with options for food types ❌
--- add search svg to search box for clear display ❌
+-- add search svg to search box for clear display ✅
 -- add instructions next to search box. ✅
 -- search animations ✅
 -- change search button animation ✅
--- Accessability have input hold open while search button is tab focused ❌
+-- Accessability have input hold open while search button is tab focused ✅
 -- user profile fixed and linked with user_profile html ✅
 
--- Move Food type categories into map search container single row across top above map
+-- Move Food type categories into map search container single row across top above map ✅
 
--- Change search container font sizing to be more readable
+-- Change search container font sizing to be more readable ✅
 
--- Make it so that when a restaurant's details are displayed the rest details section is placed in the center of the display
+-- Make it so that when a restaurant's details are displayed the rest details section is placed in the center of the display ✅
+
+-- downsize images again for quicker load times ✅
+
+-- Separate user profile and create profile.
+-- Make create profile a creation form popup on click (Use display none then set it to display in the center of the screen with the background blurred)
+
+-- Decide on what to do with user profile (Either make it on click open a different page or have a popup with the users information.)
 
 JavaScript--
 -- figure out correct sizing for images to display when restaurant card is clicked. ✅

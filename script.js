@@ -7,6 +7,19 @@ document.addEventListener('DOMContentLoaded', function() {
   const restCards = document.querySelectorAll('rest-card');
   const cardContents = document.querySelectorAll('.card-content');
   const restdetails = document.getElementById('rest-details');
+  const createAccount = document.getElementById('create-account-button');
+  const closepopupButton = document.getElementById('closepopupbutton');
+  const popupContainer = document.getElementById('popup-container');
+
+  createAccount.addEventListener("click", () => {
+    popupContainer.style.display = 'flex';
+    console.log("Create account button was clicked");
+  });
+
+  closepopupButton.addEventListener("click", () => {
+    popupContainer.style.display = 'none';
+    console.log("Creation popup was closed");
+  });
 
   // Helper function to display restaurant details
   function showDetails(cardcontent) {
@@ -26,6 +39,9 @@ document.addEventListener('DOMContentLoaded', function() {
       <img src="${imageUrl}" alt="${restaurantName}" style="border-radius:20px;margin-bottom:10px;">
       <p>${restaurantInformation}</p>
     `;
+
+    // Scroll to the details section
+    restdetails.scrollIntoView({ behavior: "smooth", block: "center" });
   }
 
   // Add click event listener to each card-content element
