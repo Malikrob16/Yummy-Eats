@@ -49,6 +49,8 @@ Set structure left side grid list of restaurants right side details of restauran
 -- Separate user profile and create profile.
 -- Make create profile a creation form popup on click (Use display none then set it to display in the center of the screen with the background blurred)
 
+-- Fix Create account popup media query
+
 -- Decide on what to do with user profile (Either make it on click open a different page or have a popup with the users information.)
 
 JavaScript--

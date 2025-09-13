@@ -428,6 +428,7 @@ main {
   border: 3px solid rgba(190, 189, 189, 0.3);
   text-align: center;
   color: var(--light-gray);
+  position: relative;
   padding: 20px;
   width: 50%;
   height: 50%;
@@ -472,9 +473,9 @@ main {
 }
 
 .popup-content .closepopupbutton {
-  position: relative;
-  bottom: 400px;
-  left: 290px;
+  position: absolute;
+  top:10px;
+  right:10px;
   background: none;
   stroke: var(--black);
   border: none;
@@ -482,7 +483,9 @@ main {
   transition: all 0.5s ease-in-out;
 }
 
-.popup-content .closepopupbutton:hover {
+.popup-content .closepopupbutton:hover,
+.popup-content .closepopupbutton:active,
+.popup-content .closepopupbutton:focus {
   stroke:var(--gold);
   transition: all 0.5s ease-in-out;
 }
@@ -567,7 +570,7 @@ main {
 }
 
 /*RESTAURANT CARDS*/
-rest-card {
+.rest-card {
   display: flex;
   margin: 10px;
   height: 250px;
@@ -577,11 +580,14 @@ rest-card {
   color: var(--white);
   overflow: hidden;
   cursor: pointer;
+  background-size: cover;
+  background-position: center;
 }
 
-rest-card:focus-within .card-content,
-rest-card:focus .card-content {
-  transform: translateY(10px);
+.rest-card:focus-within .card-content,
+.rest-card:focus .card-content,
+.rest-card .card-content:hover {
+  transform: translateY(50px);
   transition: transform 0.5s ease-in-out;
 }
 
@@ -608,13 +614,13 @@ rest-card:focus .card-content {
   transition: transform 0.5s ease-in-out;
 }
 
-rest-card .card-content:hover {
-  transform: translateY(10px);
+.rest-card .card-content:hover {
+  transform: translateY(60px);
   transition: transform 0.5s ease-in-out;
 }
 
 .card-content .order-button {
-  margin-top: auto;
+  margin-top: 0.5rem;
   padding: 10px;
   border: none;
   background: var(--hdr-gradient);
@@ -644,7 +650,7 @@ rest-card .card-content:hover {
   }
 
   .rest-card {
-    width: 50%;
+    width: 100%;
     height: 300px;
     margin: 0 auto;
   }

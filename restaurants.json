@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "name": "Billy's BBQ",
+    "location": "123 test lane",
+    "priceRange": "$20.00 - $150.00",
+    "starRating": 4.5,
+    "menu": ["Brisket", "Ribs", "Cornbread"],
+    "image": "./assets/images/adrien-olichon-restaurantresized2020.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Cat's Crawfish",
+    "location": "321 test lane",
+    "priceRange": "$10.00 - $50.00",
+    "starRating": 4.0,
+    "menu": ["Crawfish", "Shrimp", "Gumbo"],
+    "image": "./assets/images/chris-liverani-restaurantresized3030.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Icy's Ice cream",
+    "location": "123 fake ave",
+    "priceRange": "$15.00 - $35.00",
+    "starRating": 4.5,
+    "menu": ["Ice cream", "Sundae", "Float"],
+    "image": "./assets/images/dan-gold-restaurantresized2525.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Malik's Meatloaf",
+    "location": "321 fake ave",
+    "priceRange": "$20.00 - $80.00",
+    "starRating": 3.5,
+    "menu": ["Loaf", "Sandwich", "Lamb loaf"],
+    "image": "./assets/images/nathan-dumlao-restaurantresized2020.jpg"
+  },
+  {
+    "id":5,
+    "name": "Angela's Avocados",
+    "location": "123 fake blvd",
+    "priceRange": "$5.00 - $55.00",
+    "starRating": 4.2,
+    "menu": ["Tacos", "Toast", "burger"],
+    "image": "./assets/images/jason-leung-restaurantresized1515.jpg"
+  },
+  {
+    "id":6,
+    "name": "Moniques's Melters",
+    "location": "321 fake blvd",
+    "priceRange": "$25.00 - $45.00",
+    "starRating": 4.8,
+    "menu": ["Melt", "Veggie Melt", "Chicken Melt"],
+    "image": "./assets/images/jay-wennington-restaurantresized2525.jpg"
+  },
+  {
+    "id":7,
+    "name": "Lily's Lots",
+    "location": "111 real ave",
+    "priceRange": "$15.00 - $65.00",
+    "starRating": 4.0,
+    "menu": ["Flatbread", "Pasta", "Shortbread"],
+    "image": "./assets/images/kayleigh-harrington-restaurantresized1515.jpg"
+  },
+  {
+    "id":8,
+    "name": "Veggie's Volume",
+    "location": "222 real ave",
+    "priceRange": "$20.00 - $60.00",
+    "starRating": 4.3,
+    "menu": ["Stir-Fry", "Veggie tacos", "Eggplant"],
+    "image": "./assets/images/patrick-tomasso-restaurantresized2020.jpg"
+  },
+  {
+    "id":9,
+    "name": "Shawn's Sliders",
+    "location": "333 real ave",
+    "priceRange": "$10.00 - $70.00",
+    "starRating": 4.0,
+    "menu": ["Angus burger", "Chicken burger", "Lamb burger"],
+    "image": "./assets/images/shawn-nmp-restaurantresized1515.jpg"
+  }
+]
