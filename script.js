@@ -6,10 +6,21 @@ document.addEventListener('DOMContentLoaded', function() {
   // Use querySelectorAll to get a NodeList of all elements with the class 'card-content'
   const restCards = document.querySelectorAll('rest-card');
   const cardContents = document.querySelectorAll('.card-content');
+  const restList = document.getElementById('rest-list');
   const restdetails = document.getElementById('rest-details');
+  let restaurantData = [];
   const createAccount = document.getElementById('create-account-button');
   const closepopupButton = document.getElementById('closepopupbutton');
   const popupContainer = document.getElementById('popup-container');
+
+  
+  // Popup Open / close events
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape'){
+      popupContainer.style.display = 'none';
+      console.log("Creation popup was closed");
+    }
+  })
 
   createAccount.addEventListener("click", () => {
     popupContainer.style.display = 'flex';
@@ -21,46 +32,41 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log("Creation popup was closed");
   });
 
-  // Helper function to display restaurant details
-  function showDetails(cardcontent) {
-    const restCard = cardcontent.parentElement;
-    const bgImage = restCard.style.backgroundImage;
+  fetch('restaurants.json')
+    .then(res => res.json())
+    .then(data => {
+      restaurantData = data;
+      console.log("Data was loaded");
+      console.log(data)
+      restList.innerHTML = data.map(rest => `
+        <div class="rest-card" data-id="${rest.id}" tabindex="0" style="background-image: url('${rest.image}');">
+          <div class="card-content">
+            <h2>${rest.name}</h2>
+            <p>
+              Location: ${rest.location} <br>
+              Price Range: ${rest.priceRange}
+            </p>
+            <button class="order-button">Order Now</button>
+          </div>
+        </div>
+        `).join('');
 
-    let imageUrl = '';
-
-    if (bgImage && bgImage.startsWith('url(')) {
-      imageUrl = bgImage.slice(4, -1).replace(/["']/g, "");
-    }
-    const restaurantName = cardcontent.querySelector('h2').innerText;
-    const restaurantInformation = cardcontent.querySelector('p').innerHTML;
-
-    restdetails.innerHTML = `
-      <h2>${restaurantName}</h2>
-      <img src="${imageUrl}" alt="${restaurantName}" style="border-radius:20px;margin-bottom:10px;">
-      <p>${restaurantInformation}</p>
-    `;
-
-    // Scroll to the details section
-    restdetails.scrollIntoView({ behavior: "smooth", block: "center" });
-  }
-
-  // Add click event listener to each card-content element
-  cardContents.forEach(function(cardcontent) {
-    cardcontent.addEventListener('click', function(event) {
-      console.log("A card was clicked!")
-      event.stopPropagation();
-      showDetails(cardcontent);
+        restList.querySelectorAll('.rest-card').forEach(card => {
+          card.addEventListener('click', function() {
+            const id = parseInt(card.getAttribute('data-id'));
+            const rest = restaurantData.find(r => r.id === id);
+            if (rest) {
+              restdetails.innerHTML = `
+                <h2>${rest.name}</h2>
+                <img src="${rest.image}" alt="${rest.name}" style="border-radius:20px;margin-bottom:10px">
+                <p>Location: ${rest.location}</p>
+                <p>Price Range: ${rest.priceRange}</p>
+                <p>Star Rating: ${rest.starRating} / 5.0</p>
+                <p>Menu: ${rest.menu.join(',')}</p>
+                `;
+                restdetails.scrollIntoView({behavior: "smooth", block: "center"});
+            }
+          });
+        });
     });
-  });
-
-  // Add click event listener to each rest-card element
-  restCards.forEach(function(card) {
-    card.addEventListener('click', function(event) {
-      console.log("A card was clicked!")
-      const cardcontent = card.querySelector('.card-content');
-      if (cardcontent) {
-        showDetails(cardcontent);
-      }
-    });
-  });
 });
