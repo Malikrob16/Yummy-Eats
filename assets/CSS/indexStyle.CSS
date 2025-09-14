@@ -453,7 +453,7 @@ main {
   height: 50%;
   margin: 1rem;
   padding: 10px;
-  border: 1px solid var(--gray);
+  border: 2px solid var(--gray);
   background: var(--hdr-gradient);
   color: var(--white);
   font-weight: bold;
@@ -467,8 +467,7 @@ main {
 .popup-content .submit-button:focus {
   background: var(--gold);
   color: var(--black);
-  border: 5px solid var(--dark-blue);
-  transform: scale(1.05);
+  border: 2px solid var(--dark-blue);
   transition: all 0.5s ease-in-out;
 }
 
@@ -619,10 +618,12 @@ main {
   transition: transform 0.5s ease-in-out;
 }
 
-.card-content .order-button {
+.card-content .order-button,
+.detail-buttons .contact-button,
+.detail-buttons .order-button {
   margin-top: 0.5rem;
   padding: 10px;
-  border: none;
+  border: 2px solid var(--gray);
   background: var(--hdr-gradient);
   color: var(--white);
   font-weight: bold;
@@ -632,11 +633,16 @@ main {
 
 .card-content .order-button:hover,
 .card-content .order-button:focus,
-.card-content .order-button:active {
+.card-content .order-button:active,
+.detail-buttons .contact-button:hover,
+.detail-buttons .order-button:hover,
+.detail-buttons .contact-button:focus,
+.detail-buttons .order-button:focus,
+.detail-buttons .contact-button:active,
+.detail-buttons .order-button:active {
   background: var(--gold);
   color: var(--black);
-  border: 5px solid var(--dark-blue);
-  transform: scale(1.05);
+  border: 2px solid var(--dark-blue);
   transition: all 0.3s ease-in-out;
 }
 
@@ -651,7 +657,7 @@ main {
 
   .rest-card {
     width: 100%;
-    height: 300px;
+    height: 250px;
     margin: 0 auto;
   }
 }
@@ -668,7 +674,7 @@ main {
 
   .rest-card {
     width: 90%;
-    height: 300px;
+    height: 250px;
     margin: 0 auto;
   }
 }
@@ -684,7 +690,7 @@ main {
   backdrop-filter: blur(10px) brightness(1.1);
   border: 3px solid rgba(190, 189, 189, 0.3);
   width: 50%;
-  height: 700px;
+  height: 800px;
   color: var(--white);
   text-shadow: var(--black) 1px 1px 2px;
   padding: 0.5rem;
@@ -712,6 +718,28 @@ main {
 .rest-details p {
   font-size: 1.5rem;
   margin: 0 0.5rem 0 0.5rem;
+}
+
+.detail-buttons {
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem;
+  width: 100%;
+  gap:10px;
+}
+
+.detail-buttons .contact-button,
+.detail-buttons .order-button {
+  width: 45%;
+  margin-top: 0.5rem;
+  padding: 10px;
+  border: 2px solid var(--gray);
+  background: var(--hdr-gradient);
+  color: var(--white);
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
   @media screen and (max-width: 768px){
@@ -760,8 +788,7 @@ main {
 .food-button:active {
   background: var(--gold);
   color: var(--black);
-  border: 5px solid var(--dark-blue);
-  transform: scale(1.05);
+  border: 1px solid var(--dark-blue);
   transition: all 0.3s ease-in-out;
 }
 
