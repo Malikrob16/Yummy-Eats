@@ -6,7 +6,7 @@
     "priceRange": "$20.00 - $150.00",
     "starRating": 4.5,
     "menu": ["Brisket", "Ribs", "Cornbread"],
-    "image": "./assets/images/adrien-olichon-restaurantresized2020.jpg"
+    "image": "./assets/images/adrien-olichon-restaurant-600px.jpg"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "priceRange": "$10.00 - $50.00",
     "starRating": 4.0,
     "menu": ["Crawfish", "Shrimp", "Gumbo"],
-    "image": "./assets/images/chris-liverani-restaurantresized3030.jpg"
+    "image": "./assets/images/chris-liverani-restaurant-600px.jpg"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "priceRange": "$15.00 - $35.00",
     "starRating": 4.5,
     "menu": ["Ice cream", "Sundae", "Float"],
-    "image": "./assets/images/dan-gold-restaurantresized2525.jpg"
+    "image": "./assets/images/dan-gold-restaurant-600px.jpg"
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "priceRange": "$20.00 - $80.00",
     "starRating": 3.5,
     "menu": ["Loaf", "Sandwich", "Lamb loaf"],
-    "image": "./assets/images/nathan-dumlao-restaurantresized2020.jpg"
+    "image": "./assets/images/nathan-dumlao-restaurant-600px.jpg"
   },
   {
     "id":5,
@@ -42,7 +42,7 @@
     "priceRange": "$5.00 - $55.00",
     "starRating": 4.2,
     "menu": ["Tacos", "Toast", "burger"],
-    "image": "./assets/images/jason-leung-restaurantresized1515.jpg"
+    "image": "./assets/images/jason-leung-restaurant-600px.jpg"
   },
   {
     "id":6,
@@ -51,7 +51,7 @@
     "priceRange": "$25.00 - $45.00",
     "starRating": 4.8,
     "menu": ["Melt", "Veggie Melt", "Chicken Melt"],
-    "image": "./assets/images/jay-wennington-restaurantresized2525.jpg"
+    "image": "./assets/images/jay-wennington-restaurant-600px.jpg"
   },
   {
     "id":7,
@@ -60,7 +60,7 @@
     "priceRange": "$15.00 - $65.00",
     "starRating": 4.0,
     "menu": ["Flatbread", "Pasta", "Shortbread"],
-    "image": "./assets/images/kayleigh-harrington-restaurantresized1515.jpg"
+    "image": "./assets/images/kayleigh-harrington-restaurant-400px.jpg"
   },
   {
     "id":8,
@@ -69,7 +69,7 @@
     "priceRange": "$20.00 - $60.00",
     "starRating": 4.3,
     "menu": ["Stir-Fry", "Veggie tacos", "Eggplant"],
-    "image": "./assets/images/patrick-tomasso-restaurantresized2020.jpg"
+    "image": "./assets/images/patrick-tomasso-restaurant-600px.jpg"
   },
   {
     "id":9,
@@ -78,6 +78,6 @@
     "priceRange": "$10.00 - $70.00",
     "starRating": 4.0,
     "menu": ["Angus burger", "Chicken burger", "Lamb burger"],
-    "image": "./assets/images/shawn-nmp-restaurantresized1515.jpg"
+    "image": "./assets/images/shawn-nmp-restaurant-500px.jpg"
   }
 ]

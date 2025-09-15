@@ -67,6 +67,7 @@ p:last-of-type{
 /*HEADER*/
 header{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   position: sticky;
@@ -435,9 +436,42 @@ main {
   z-index: 9999;
 }
 
+@media screen and (max-width:768px) {
+  .create-popup-hidden .popup-content h2 {
+    font-size: 2rem;
+  }
+
+}
+
+@media screen and (max-width:600px) {
+
+  .create-popup-hidden .popup-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .create-popup-hidden .popup-content label {
+    font-size: 1rem;
+  }
+  
+}
+
+@media screen and (max-width:344px) {
+  .create-popup-hidden .popup-content h2 {
+    font-size: 1.5rem;
+  }
+  .create-popup-hidden .popup-content label {
+    font-size: 0.8rem;
+  }
+  .create-popup-hidden .popup-content input {
+    border-radius: 20px;
+    width: 100%;
+    height: 1.5rem;
+  }
+}
+
 .popup-content h2 {
   margin: 0.5rem;
-  font-size: 3rem;
+  font-size: 2.6rem;
 }
 
 .popup-content label {
@@ -445,16 +479,19 @@ main {
 }
 
 .popup-content input {
+  border-radius: 20px;
   width: 50%;
+  height: 2rem;
 }
 
-.popup-content .submit-button {
+.create-popup-hidden .popup-content .submit-button {
   width: 50%;
-  height: 50%;
+  height: 2.5rem;
   margin: 1rem;
-  padding: 10px;
+  padding: 0.5rem 0 0.5rem 0;
   border: 2px solid var(--gray);
   background: var(--hdr-gradient);
+  text-align: center;
   color: var(--white);
   font-weight: bold;
   border-radius: 20px;
@@ -474,7 +511,7 @@ main {
 .popup-content .closepopupbutton {
   position: absolute;
   top:10px;
-  right:10px;
+  right:3px;
   background: none;
   stroke: var(--black);
   border: none;
@@ -614,7 +651,7 @@ main {
 }
 
 .rest-card .card-content:hover {
-  transform: translateY(60px);
+  transform: translateY(30px);
   transition: transform 0.5s ease-in-out;
 }
 
