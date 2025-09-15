@@ -62,7 +62,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 <p>Location: ${rest.location}</p>
                 <p>Price Range: ${rest.priceRange}</p>
                 <p>Star Rating: ${rest.starRating} / 5.0</p>
-                <p>Menu: ${rest.menu.join(',')}</p>
+                <p>Menu: ${rest.menu.join(' , ')}</p>
+                <div class="detail-buttons">
+                  <button class="contact-button">Contact</button>
+                  <button class="order-button">Order Now</button>
+                </div>
                 `;
                 restdetails.scrollIntoView({behavior: "smooth", block: "center"});
             }
