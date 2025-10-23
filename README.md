@@ -68,6 +68,18 @@ The main objective of this project was to strengthen front-end development skill
 
 ---
 
+## 📌 Future Improvements
+
+- Add restaurant rating and review functionality
+
+- Implement search auto-suggestions
+
+- Introduce dark mode toggle
+
+- Integrate API data for dynamic restaurant listings
+
+---
+
 ## 🧾 License
 
 This project is open source and available under the MIT License
