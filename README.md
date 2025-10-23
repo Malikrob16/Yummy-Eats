@@ -68,20 +68,6 @@ The main objective of this project was to strengthen front-end development skill
 
 ---
 
-## 🚀 Getting Started
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/Malikrob16/Yummy-Eats.git
-
-### 2. Navigate into project directory
-cd Yummy-Eats
-
-### 3. Open project in browser of your choice
-Open index.html (in your prefered browser)
-
----
-
 ## 🧾 License
 
 This project is open source and available under the MIT License
@@ -94,3 +80,17 @@ This project is open source and available under the MIT License
 Malik Robinson
 Front-End Developer | Passionate about creating interactive and responsive web experiences
 📧 malik16.mr@gmail.com
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/Malikrob16/Yummy-Eats.git
+
+### 2. Navigate into project directory
+cd Yummy-Eats
+
+### 3. Open project in browser of your choice
+Open index.html (in your prefered browser)
